@@ -6,8 +6,8 @@ const { interface, bytecode } = require('./compile'); // compile.js file
 // deploy code will go here
 
 const provider = new HDWalletProvider(
-  'bargain alert alley silver silk sustain pepper require custom two high away',
-  'https://sepolia.infura.io/v3/98445c0345004f2ca18fd9d176d0afef'
+  'Your wallet Mnemonic',
+  'sepolia deployed contract link'
 )
 
 const web3 = new Web3(provider);
