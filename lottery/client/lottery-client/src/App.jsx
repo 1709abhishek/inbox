@@ -13,7 +13,6 @@ function App() {
   useEffect(() => {
     const init = async () => {
       try {
-        // Get contract data when component mounts
         const manager = await lottery.methods.manager().call();
         console.log(manager)
         const players = await lottery.methods.getPlayers().call();
