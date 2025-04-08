@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #45a049;
+  --light-color: #f5f5f5;
+  --dark-color: #333;
+  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --border-radius: 6px;
+  --transition-speed: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.lottery-container {
+  max-width: 800px;
+  width: 90%;
+  background-color: var(--light-color);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: var(--primary-color);
+  margin: 30px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+input {
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: var(--border-radius);
+  width: 80%;
+  max-width: 300px;
+  margin: 10px 0;
+  transition: border var(--transition-speed);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color var(--transition-speed);
+  margin: 15px 0;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+h4 {
+  text-align: center;
+  color: var(--dark-color);
+  margin: 20px 0;
+}
+
+.pick-winner {
+  display: block;
+  margin: auto;
+}
